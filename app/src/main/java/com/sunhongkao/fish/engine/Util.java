@@ -54,4 +54,8 @@ public class Util {
     public static boolean equals(float a, float b) {
         return Math.abs(a - b) < 0.01f;
     }
+
+    public static boolean isVip() {
+        return true;
+    }
 }

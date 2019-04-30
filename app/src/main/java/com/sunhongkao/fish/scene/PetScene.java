@@ -12,6 +12,7 @@ import com.sunhongkao.fish.engine.AsEngine;
 import com.sunhongkao.fish.engine.AsText;
 import com.sunhongkao.fish.engine.Deliver;
 import com.sunhongkao.fish.engine.Recorder;
+import com.sunhongkao.fish.engine.Util;
 import com.sunhongkao.fish.pet.Pet;
 import com.sunhongkao.fish.round.RoundMgr;
 import com.sunhongkao.fish.R;
@@ -22,7 +23,7 @@ public class PetScene extends BaseScene {
     public static final int INTENT_ROUND = 1;
     public static final int INTENT_CLONE = 2;
 
-    private static final int PET_MAX = 3;
+    private static final int PET_MAX = Util.isVip() ? 100 : 3;
 
     private Deliver mRoundDeliver;
     private int mIntent;
@@ -68,15 +69,15 @@ public class PetScene extends BaseScene {
                 }
             }
 
+//            if (num <= PET_MAX) {
+//                mRoundDeliver.set(Pet.KEY_MASK, mask);
+//
+//                AsEngine.it().pop();
+//                AsEngine.it().push(new RoundScene(), mRoundDeliver);
+//                return;
+//            }
+
             mMask = Recorder.getPetMask();
-
-            if (num <= PET_MAX) {
-                mRoundDeliver.set(Pet.KEY_MASK, mask);
-
-                AsEngine.it().pop();
-                AsEngine.it().push(new RoundScene(), mRoundDeliver);
-                return;
-            }
         }
 
         mText = new AsText();

@@ -94,11 +94,11 @@ public abstract class RoundBase implements IUpdater,
                     mClone = pet;
                 }
 
-//                if (pet.supportMulti()) {
-//                    pet = Pet.newPet(i);
-//                    pet.initPosition();
-//                    pet.attachSelf();
-//                }
+                if (Util.isVip() && pet.supportMulti()) {
+                    pet = Pet.newPet(i);
+                    pet.initPosition();
+                    pet.attachSelf();
+                }
             }
         }
     }
