@@ -23,6 +23,7 @@ public class Util {
 
             return size;
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         return null;
@@ -44,6 +45,7 @@ public class Util {
 
             return n;
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         return def;

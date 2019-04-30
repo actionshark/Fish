@@ -8,6 +8,7 @@ import com.sunhongkao.fish.engine.AsActivity;
 import com.sunhongkao.fish.engine.AsText;
 import com.sunhongkao.fish.engine.Deliver;
 import com.sunhongkao.fish.R;
+import com.sunhongkao.fish.engine.Logger;
 
 
 public class AboutScene extends BaseScene {
@@ -25,6 +26,7 @@ public class AboutScene extends BaseScene {
                     getPackageInfo(AsActivity.it().getPackageName(), 0);
             text.appendText(" " + pkgInfo.versionName);
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         text.appendText("\n\n");

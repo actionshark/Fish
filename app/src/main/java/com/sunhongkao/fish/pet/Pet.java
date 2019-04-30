@@ -1,6 +1,7 @@
 package com.sunhongkao.fish.pet;
 
 import com.sunhongkao.fish.engine.AsActivity;
+import com.sunhongkao.fish.engine.Logger;
 import com.sunhongkao.fish.stage.ActorState;
 
 
@@ -36,6 +37,7 @@ public abstract class Pet extends ActorState {
 
             pet = (Pet) Class.forName(path).newInstance();
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         return pet;

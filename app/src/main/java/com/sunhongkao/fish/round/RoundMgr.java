@@ -2,6 +2,7 @@ package com.sunhongkao.fish.round;
 
 import com.sunhongkao.fish.engine.AsActivity;
 import com.sunhongkao.fish.engine.Deliver;
+import com.sunhongkao.fish.engine.Logger;
 
 
 public class RoundMgr {
@@ -48,6 +49,7 @@ public class RoundMgr {
             sRound.init(type, index);
             return sRound;
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         return null;

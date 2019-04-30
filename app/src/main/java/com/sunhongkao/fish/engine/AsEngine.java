@@ -206,6 +206,7 @@ public class AsEngine extends LimitedFPSEngine {
             mMusic.setLooping(loop);
             mMusic.play();
         } catch (Exception e) {
+            Logger.print(e);
         }
     }
 

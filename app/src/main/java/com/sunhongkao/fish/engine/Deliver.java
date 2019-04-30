@@ -45,7 +45,7 @@ public class Deliver {
             try {
                 return (Integer) mMap.get(key);
             } catch (Exception e) {
-
+                Logger.print(e);
             }
         }
 
@@ -57,7 +57,7 @@ public class Deliver {
             try {
                 return (String) mMap.get(key);
             } catch (Exception e) {
-
+                Logger.print(e);
             }
         }
 
@@ -69,7 +69,7 @@ public class Deliver {
             try {
                 return (Boolean) mMap.get(key);
             } catch (Exception e) {
-
+                Logger.print(e);
             }
         }
 
@@ -81,7 +81,7 @@ public class Deliver {
             try {
                 return (int[]) mMap.get(key);
             } catch (Exception e) {
-
+                Logger.print(e);
             }
         }
 
@@ -93,7 +93,7 @@ public class Deliver {
             try {
                 return (String[]) mMap.get(key);
             } catch (Exception e) {
-
+                Logger.print(e);
             }
         }
 

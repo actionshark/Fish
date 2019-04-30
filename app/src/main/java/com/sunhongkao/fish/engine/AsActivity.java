@@ -163,6 +163,7 @@ public class AsActivity extends BaseGameActivity {
 
             return region;
         } catch (Exception e) {
+            Logger.print(e);
         }
 
         return null;
