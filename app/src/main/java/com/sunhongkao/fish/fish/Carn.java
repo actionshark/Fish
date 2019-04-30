@@ -32,7 +32,7 @@ public class Carn extends Fish implements ITurnable {
 
     @Override
     protected StageItem wantEat() {
-        List<Fish> list = new ArrayList<Fish>();
+        List<Fish> list = new ArrayList<>();
 
         for (int i = 0; i < FishMgr.sAll.size(); i++) {
             Fish fish = FishMgr.sAll.get(i);

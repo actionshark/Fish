@@ -66,7 +66,7 @@ public abstract class RoundPetBase extends RoundBase {
     @Override
     public void onPropEvent(PropBox propBox) {
         if (propBox == mPropBoxs[6]) {
-            List<Integer> list = new ArrayList<Integer>();
+            List<Integer> list = new ArrayList<>();
             int i;
 
             for (i = 0; i < Pet.PETS.length; i++) {

@@ -40,7 +40,7 @@ public class Snail extends Pet implements ITurnable {
 
         if (mSeekAction.seekee == null) {
             List<Money> all = MoneyMgr.getAll();
-            List<Money> list = new ArrayList<Money>();
+            List<Money> list = new ArrayList<>();
 
             for (int i = 0; i < all.size(); i++) {
                 if (all.get(i).getMove() == IMover.TYPE_DOWN) {

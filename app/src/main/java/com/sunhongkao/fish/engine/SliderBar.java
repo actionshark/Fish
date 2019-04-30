@@ -138,7 +138,7 @@ public class SliderBar extends Rectangle {
         mListener = listener;
     }
 
-    public static interface SliderListener {
-        public void onSlide(SliderBar sliderBar, float percent);
+    public interface SliderListener {
+        void onSlide(SliderBar sliderBar, float percent);
     }
 }

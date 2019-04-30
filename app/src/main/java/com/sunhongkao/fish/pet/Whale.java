@@ -15,7 +15,7 @@ import com.sunhongkao.fish.R;
 
 
 public class Whale extends Pet implements ITurnable {
-    private final List<Guppy> mGuppys = new ArrayList<Guppy>();
+    private final List<Guppy> mGuppys = new ArrayList<>();
     private ActState mActState = new ActState();
     private boolean mProtected = false;
 

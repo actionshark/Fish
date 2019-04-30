@@ -45,7 +45,7 @@ public class SeekAssist {
     public static List<StageItem> touch(StageItem toucher,
                                         List<? extends StageItem> touchees) {
 
-        List<StageItem> ret = new ArrayList<StageItem>();
+        List<StageItem> ret = new ArrayList<>();
         if (toucher == null || touchees == null) {
             return ret;
         }

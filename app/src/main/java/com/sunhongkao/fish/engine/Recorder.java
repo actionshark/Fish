@@ -28,7 +28,7 @@ public class Recorder {
     public static void init(Context context) {
         sPref = PreferenceManager.getDefaultSharedPreferences(context);
         sEditor = sPref.edit();
-        sEditor.commit();
+        sEditor.apply();
 
         if (getRoundAdveState(0) == RoundMgr.STATE_LOCKED) {
             setRoundAdveState(0, RoundMgr.STATE_UNLOCKED);
@@ -46,7 +46,7 @@ public class Recorder {
     public static void setMusicVolume(float volume) {
         sMusicVolume = volume;
         sEditor.putFloat(KEY_MUSIC_VOL, volume);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static float getSoundVolume() {
@@ -56,7 +56,7 @@ public class Recorder {
     public static void setSoundVolume(float volume) {
         sSoundVolume = volume;
         sEditor.putFloat(KEY_SOUND_VOL, volume);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static int getRoundAdveState(int index) {
@@ -65,7 +65,7 @@ public class Recorder {
 
     public static void setRoundAdveState(int index, int state) {
         sEditor.putInt(KEY_ROUND_ADVE + "_" + index, state);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static int getRoundPetsState(int index) {
@@ -74,7 +74,7 @@ public class Recorder {
 
     public static void setRoundPetsState(int index, int state) {
         sEditor.putInt(KEY_ROUND_PETS + "_" + index, state);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static int getRoundChalState(int index) {
@@ -83,7 +83,7 @@ public class Recorder {
 
     public static void setRoundChalState(int index, int state) {
         sEditor.putInt(KEY_ROUND_CHAL + "_" + index, state);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static int getEnabledPets() {
@@ -97,7 +97,7 @@ public class Recorder {
     public static void enablePet(int index) {
         sEditor.putInt(KEY_PET_ENABLED,
                 sPref.getInt(KEY_PET_ENABLED, 0) | (1 << index));
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static int getPetMask() {
@@ -106,7 +106,7 @@ public class Recorder {
 
     public static void setPetMask(int mask) {
         sEditor.putInt(KEY_PET_MASK, mask);
-        sEditor.commit();
+        sEditor.apply();
     }
 
     public static boolean isKeepScreenOn() {
@@ -115,6 +115,6 @@ public class Recorder {
 
     public static void setKeepScreenOn(boolean on) {
         sEditor.putBoolean(KEY_KEEP_SCREEN_ON, on);
-        sEditor.commit();
+        sEditor.apply();
     }
 }

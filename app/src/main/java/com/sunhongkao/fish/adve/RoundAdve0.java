@@ -7,7 +7,7 @@ import com.sunhongkao.fish.fish.Guppy;
 import com.sunhongkao.fish.stage.PropBox;
 
 
-public class RoundAdve0 extends com.sunhongkao.fish.adve.RoundAdveBase {
+public class RoundAdve0 extends RoundAdveBase {
     @Override
     public void onCreate(Deliver deliver) {
         super.onCreate(deliver);

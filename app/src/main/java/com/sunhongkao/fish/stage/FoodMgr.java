@@ -16,7 +16,7 @@ public class FoodMgr {
     protected static final int[] RESID = new int[]{
             R.drawable.fd_low_400_40, R.drawable.fd_medium_400_40,
             R.drawable.fd_high_400_40, R.drawable.fd_drug_400_40};
-    protected static final List<Food> sAll = new ArrayList<Food>();
+    protected static final List<Food> sAll = new ArrayList<>();
 
     private static int sType = FOOD_LOW;
     private static int sTypeCost = 200;
@@ -126,7 +126,7 @@ public class FoodMgr {
     }
 
     public static List<Food> getDrug() {
-        List<Food> drugs = new ArrayList<Food>();
+        List<Food> drugs = new ArrayList<>();
 
         for (int i = 0; i < sAll.size(); i++) {
             if (sAll.get(i).getType() == FOOD_DRUG) {

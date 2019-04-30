@@ -23,7 +23,7 @@ import com.sunhongkao.fish.scene.DialogBaseScene;
 public class AsEngine extends LimitedFPSEngine {
     private static AsEngine sInstance;
 
-    private final List<BaseScene> mScenes = new ArrayList<BaseScene>();
+    private final List<BaseScene> mScenes = new ArrayList<>();
 
     private static final int FPS = 25;
     private static final long MPF = 1000 / FPS;
@@ -31,7 +31,7 @@ public class AsEngine extends LimitedFPSEngine {
     private int mMusicId;
     private Music mMusic;
 
-    private final SparseArray<Sound> mSounds = new SparseArray<Sound>();
+    private final SparseArray<Sound> mSounds = new SparseArray<>();
 
 
     public static AsEngine it() {

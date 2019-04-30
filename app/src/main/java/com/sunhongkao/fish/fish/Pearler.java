@@ -31,7 +31,7 @@ public class Pearler extends Fish implements ITurnable {
     @Override
     protected StageItem wantEat() {
         List<Money> all = MoneyMgr.getAll();
-        List<Money> list = new ArrayList<Money>();
+        List<Money> list = new ArrayList<>();
 
         for (int i = 0; i < all.size(); ++i) {
             if (all.get(i).getType() == MoneyMgr.MONEY_WORM) {

@@ -33,7 +33,7 @@ public class PropBox implements IOnTouchListener {
     private int mState = STATE_READY;
     private boolean mClickable = true;
 
-    private final List<PropListener> mListeners = new ArrayList<PropListener>();
+    private final List<PropListener> mListeners = new ArrayList<>();
 
 
     public PropBox(StageItem mark, StageGift prop, StageGift box, AsText text) {
@@ -200,6 +200,6 @@ public class PropBox implements IOnTouchListener {
 
 
     public interface PropListener {
-        public void onPropEvent(PropBox propBox);
+        void onPropEvent(PropBox propBox);
     }
 }

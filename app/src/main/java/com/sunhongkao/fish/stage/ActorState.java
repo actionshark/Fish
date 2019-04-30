@@ -171,8 +171,8 @@ public abstract class ActorState extends Actor {
         }
 
         public void accept(State... next) {
-            for (int i = 0; i < next.length; i++) {
-                mMask |= 1 << next[i].mId;
+            for (State state : next) {
+                mMask |= 1 << state.mId;
             }
         }
 
@@ -225,8 +225,6 @@ public abstract class ActorState extends Actor {
         }
     }
 
-    ;
-
     /*************************************************************************************/
 
     public class DieState extends State {
@@ -249,7 +247,7 @@ public abstract class ActorState extends Actor {
             if (next < mSprite.getTileCount()) {
                 mSprite.setCurrentTileIndex(next);
             } else if (mDelay++ < Util.TIMES_SHORT) {
-                if (mSeekAction == null || mSeekAction.speedY != 0) {
+                if (mSeekAction.speedY != 0) {
                     if (getY() < RoundScene.tankBottom()) {
                         changeY(mSpeed);
                     }

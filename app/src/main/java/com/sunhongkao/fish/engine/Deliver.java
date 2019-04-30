@@ -14,7 +14,7 @@ public class Deliver {
     public static final int RST_CLONE = 3;
 
 
-    private final Map<String, Object> mMap = new HashMap<String, Object>();
+    private final Map<String, Object> mMap = new HashMap<>();
 
 
     public Deliver() {
@@ -43,8 +43,7 @@ public class Deliver {
     public int getInt(String key, int def) {
         if (mMap.containsKey(key)) {
             try {
-                int val = (Integer) mMap.get(key);
-                return val;
+                return (Integer) mMap.get(key);
             } catch (Exception e) {
 
             }
@@ -56,8 +55,7 @@ public class Deliver {
     public String getString(String key) {
         if (mMap.containsKey(key)) {
             try {
-                String val = (String) mMap.get(key);
-                return val;
+                return (String) mMap.get(key);
             } catch (Exception e) {
 
             }
@@ -69,8 +67,7 @@ public class Deliver {
     public boolean getBoolean(String key) {
         if (mMap.containsKey(key)) {
             try {
-                boolean val = (Boolean) mMap.get(key);
-                return val;
+                return (Boolean) mMap.get(key);
             } catch (Exception e) {
 
             }
@@ -82,8 +79,7 @@ public class Deliver {
     public int[] getIntArray(String key) {
         if (mMap.containsKey(key)) {
             try {
-                int[] val = (int[]) mMap.get(key);
-                return val;
+                return (int[]) mMap.get(key);
             } catch (Exception e) {
 
             }
@@ -95,8 +91,7 @@ public class Deliver {
     public String[] getStringArray(String key) {
         if (mMap.containsKey(key)) {
             try {
-                String[] val = (String[]) mMap.get(key);
-                return val;
+                return (String[]) mMap.get(key);
             } catch (Exception e) {
 
             }

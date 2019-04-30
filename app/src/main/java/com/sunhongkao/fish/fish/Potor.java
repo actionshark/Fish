@@ -37,7 +37,7 @@ public class Potor extends Fish {
     @Override
     protected StageItem wantEat() {
         List<Money> all = MoneyMgr.getAll();
-        List<Money> list = new ArrayList<Money>();
+        List<Money> list = new ArrayList<>();
 
         for (int i = 0; i < all.size(); ++i) {
             Money money = all.get(i);

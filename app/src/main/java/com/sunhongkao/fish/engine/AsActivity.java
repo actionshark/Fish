@@ -33,7 +33,7 @@ public class AsActivity extends BaseGameActivity {
     private int mOrgHeight;
 
     private SparseArray<ITiledTextureRegion> mRegions
-            = new SparseArray<ITiledTextureRegion>();
+            = new SparseArray<>();
 
 
     public static AsActivity it() {

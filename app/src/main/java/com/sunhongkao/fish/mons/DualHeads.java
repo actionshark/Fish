@@ -99,14 +99,14 @@ public class DualHeads extends Monster {
     @Override
     public boolean detachSelf() {
         if (!mOther.hasParent()) {
-            for (int i = 0; i < mBodies.length; i++) {
-                mBodies[i].detachSelf();
+            for (Body body : mBodies) {
+                body.detachSelf();
             }
         } else if (mActive) {
             mActive = false;
             mOther.mActive = true;
-            for (int i = 0; i < mBodies.length; i++) {
-                mBodies[i].turnHead();
+            for (Body body : mBodies) {
+                body.turnHead();
             }
         }
 
@@ -135,8 +135,8 @@ public class DualHeads extends Monster {
 
             mActive = false;
             mOther.mActive = true;
-            for (int i = 0; i < mBodies.length; i++) {
-                mBodies[i].turnHead();
+            for (Body body : mBodies) {
+                body.turnHead();
             }
         }
 
@@ -168,7 +168,7 @@ class Body extends ActorState implements ITurnable {
     private ActorState mPrev;
     private ActorState mNext;
 
-    private final List<Point> mPoints = new ArrayList<Point>();
+    private final List<Point> mPoints = new ArrayList<>();
 
 
     Body() {

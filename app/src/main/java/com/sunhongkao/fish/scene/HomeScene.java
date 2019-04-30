@@ -97,8 +97,8 @@ public class HomeScene extends BaseScene implements
                 AsActivity.it().getRegions(R.drawable.cp_mery_tail_1904_165, 8),
                 AsActivity.it().getVertexBufferObjectManager());
 
-        for (int i = 0; i < mMery.length; i++) {
-            attachChild(mMery[i]);
+        for (AnimatedSprite mery : mMery) {
+            attachChild(mery);
         }
 
         mMusicId = AsActivity.it().getRawId("ms_main_" + MathUtils.random(0, 1));

@@ -34,9 +34,8 @@ public class MoneyMgr {
             R.drawable.mn_diamond_720_72, R.drawable.mn_pearl_72_72,
             R.drawable.mn_box_720_72};
 
-    protected static final List<Money> sAllMoney = new ArrayList<Money>();
-    private static final List<MoneyEventListener> sListener
-            = new ArrayList<MoneyEventListener>();
+    protected static final List<Money> sAllMoney = new ArrayList<>();
+    private static final List<MoneyEventListener> sListener = new ArrayList<>();
 
     private static AsButton sText;
     private static int sPoint;
@@ -136,6 +135,6 @@ public class MoneyMgr {
 
 
     public interface MoneyEventListener {
-        public void onMoneyEvent(Money money, int event);
+        void onMoneyEvent(Money money, int event);
     }
 }

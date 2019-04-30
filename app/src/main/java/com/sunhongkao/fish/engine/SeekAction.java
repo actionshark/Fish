@@ -10,19 +10,19 @@ import com.sunhongkao.fish.stage.StageItem;
 
 public class SeekAction implements IUpdater {
     public interface Seeker {
-        public boolean shouldSeek();
+        boolean shouldSeek();
 
-        public void seek(StageItem seekee);
+        void seek(StageItem seekee);
 
-        public void seek(float x, float y);
+        void seek(float x, float y);
 
-        public void onSeeked(StageItem seekee);
+        void onSeeked(StageItem seekee);
 
-        public float getSeekerX();
+        float getSeekerX();
 
-        public float getSeekerY();
+        float getSeekerY();
 
-        public void onSeekMove(float dx, float dy);
+        void onSeekMove(float dx, float dy);
     }
 
 

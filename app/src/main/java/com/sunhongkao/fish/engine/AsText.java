@@ -19,7 +19,7 @@ import android.graphics.Typeface;
 public class AsText extends Rectangle {
     private static final Typeface TYPEFACE = Typeface.createFromAsset(
             AsActivity.it().getAssets(), "font/roboto.ttf");
-    private static final Map<String, Font> sMap = new HashMap<String, Font>();
+    private static final Map<String, Font> sMap = new HashMap<>();
 
     protected static Font getFont(float size, int color) {
         String key = size + "," + color;

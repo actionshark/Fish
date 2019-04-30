@@ -97,6 +97,6 @@ public class StageGift extends StageItem {
 
 
     public interface GiftListener {
-        public void onStep(StageGift gift);
+        void onStep(StageGift gift);
     }
 }

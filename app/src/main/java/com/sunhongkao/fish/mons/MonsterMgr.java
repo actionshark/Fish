@@ -13,8 +13,8 @@ public class MonsterMgr {
     public static final int HEALTH_HIGH = 189;
     public static final int HEALTH_HIGHER = 307;
 
-    protected static final List<Monster> sAll = new ArrayList<Monster>();
-    protected static final List<Monster> sDown = new ArrayList<Monster>();
+    protected static final List<Monster> sAll = new ArrayList<>();
+    protected static final List<Monster> sDown = new ArrayList<>();
 
 
     public static void reset() {

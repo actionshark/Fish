@@ -50,7 +50,7 @@ public abstract class RoundBase implements IUpdater,
     protected AsButton mMoneyText;
 
     protected boolean mHintEnabled = false;
-    protected final List<Actor> mDownActor = new ArrayList<Actor>();
+    protected final List<Actor> mDownActor = new ArrayList<>();
     protected Pet mClone;
 
     protected int mMonsterLine = Util.TIMES_LONG * 10;
@@ -72,8 +72,8 @@ public abstract class RoundBase implements IUpdater,
         mPropBoxs = (PropBox[]) deliver.get(RoundMgr.KEY_PROP_BOX);
         mMoneyText = (AsButton) deliver.get(RoundMgr.KEY_MONEY_TEXT);
 
-        for (int i = 0; i < mPropBoxs.length; i++) {
-            mPropBoxs[i].addListener(this);
+        for (PropBox propBox : mPropBoxs) {
+            propBox.addListener(this);
         }
 
         MoneyMgr.init(mMoneyText, 200);

@@ -12,10 +12,10 @@ public class FishMgr {
     public static final int EVENT_CHANGE = 3;
     public static final int EVENT_HUNGER = 4;
 
-    protected static final List<Fish> sAll = new ArrayList<Fish>();
+    protected static final List<Fish> sAll = new ArrayList<>();
     protected static int sHided;
     protected static final List<FishListener> sListeners
-            = new ArrayList<FishListener>();
+            = new ArrayList<>();
 
 
     public static void reset() {
@@ -78,6 +78,6 @@ public class FishMgr {
     }
 
     public interface FishListener {
-        public void onFishEvent(Fish fish, int event);
+        void onFishEvent(Fish fish, int event);
     }
 }

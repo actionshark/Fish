@@ -2,7 +2,7 @@ package com.sunhongkao.fish.iface;
 
 
 public interface ITurnable {
-    public boolean isTurned();
+    boolean isTurned();
 
-    public boolean tryTurn(float dx);
+    boolean tryTurn(float dx);
 }

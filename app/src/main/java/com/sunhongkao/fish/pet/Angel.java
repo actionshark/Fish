@@ -31,7 +31,7 @@ public class Angel extends Pet implements ITurnable {
 
         if (mSeekAction.seekee == null || !((Fish) mSeekAction.seekee).isDying()) {
             List<Fish> fishs = FishMgr.getAll();
-            List<Fish> dying = new ArrayList<Fish>();
+            List<Fish> dying = new ArrayList<>();
 
             for (int i = 0; i < fishs.size(); ++i) {
                 if (fishs.get(i).isDying()) {
