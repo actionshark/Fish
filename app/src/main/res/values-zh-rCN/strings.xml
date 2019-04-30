@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">水族馆</string>
+
+    <string name="wd_locked">未解锁</string>
+    <string name="wd_unlocked">已解锁</string>
+    <string name="wd_passed">已通过</string>
+    <string name="wd_round">关卡</string>
+
+    <string name="mode_adve">冒险模式</string>
+    <string name="mode_pet">宠物模式</string>
+    <string name="mode_chal">挑战模式</string>
+    <string name="mode_four">敬请期待</string>
+
+    <string name="setting_title">设置</string>
+    <string name="setting_music">音乐</string>
+    <string name="setting_sound">音效</string>
+    <string name="setting_keep_screen_on">屏幕常亮</string>
+
+    <string name="dialog_pause">暂停</string>
+    <string name="dialog_hint">提示</string>
+    <string name="dialog_unlock_pet">解锁新宠物</string>
+    <string name="dialog_completed">完成关卡！</string>
+    <string name="dialog_failed">失败……</string>
+    <string name="dialog_want_exit">要离开吗？</string>
+
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_exit">退出</string>
+    <string name="dialog_restart">重来</string>
+
+    <string name="help_title">帮助</string>
+    <string name="help_how_to_play">玩法简介</string>
+    <string name="help_mode">模式说明</string>
+    <string name="help_about">关于游戏</string>
+    <string name="help_0">鱼需要按时喂食，否则会因饥饿而死。</string>
+    <string name="help_1">鱼长大后会产生钱币，点击即可收集。</string>
+    <string name="help_2">当条件满足时道具会打开，就可以购买。</string>
+    <string name="help_3">怪物会伤害鱼类，要不断点击来杀死它。</string>
+    <string name="help_4">宠物可以协助我们。</string>
+    <string name="help_5">购买三次蛋壳之后过关。</string>
+    <string name="help_mode_words">冒险模式\n购买3次蛋过关，每关奖励一个宠物。\n\n宠物模式\n关卡开始没有宠物，蛋壳窗口换成随机宠物。第1到4关分别购买5、10、15、20个宠物过关。\n\n挑战模式\n道具价格不断增加，购买三次蛋壳过关。</string>
+    <string name="help_about_words">欢迎提出你的想法、建议以及bug反馈\n\n电子邮箱：\nactionshark@qq.com\n\n百度空间：\nhttp://hi.baidu.com/actionshark</string>
+
+    <string name="pet_title">我的宠物</string>
+    <string name="pet_show">点击宠物查看详情</string>
+    <string name="pet_round">选择三个宠物开始闯关</string>
+    <string name="pet_clone">选择一个要克隆的宠物</string>
+
+    <string name="pet_snail">蜗牛\n收集水底的钱币</string>
+    <string name="pet_clam">河蚌\n生产珍珠</string>
+    <string name="pet_sword">剑鱼\n剑鱼可以给予来犯之敌不停的攻击！</string>
+    <string name="pet_breeder">鱼妈妈\n生产小古比鱼</string>
+    <string name="pet_horse">海马\n饲养员</string>
+
+    <string name="pet_jelly">水母\n钱币收集狂</string>
+    <string name="pet_bone">鱼骨头\n钱币铸造师</string>
+    <string name="pet_crab">螃蟹\n螃蟹可以对水底的敌人予以重击！</string>
+    <string name="pet_mermaid">美人鱼\n中国好声音</string>
+    <string name="pet_whale">蓝鲸\n怪物到来时将古比鱼吸入肚子</string>
+
+    <string name="pet_turtle">海龟\n一切都慢了下来</string>
+    <string name="pet_toy">玩具鲨\n投放水雷</string>
+    <string name="pet_lamp">灯笼鱼\n灯光指引鱼儿和钱币</string>
+    <string name="pet_dolphin">海豚\n未卜先知</string>
+    <string name="pet_hermit">寄居蟹\n弹起水底的鱼，挽回掉落金币的部分损失</string>
+
+    <string name="pet_fan">扇子鱼\n扇子鱼的愿望就是东西不要沉下去</string>
+    <string name="pet_eel">电鳗\n电死鱼儿获得钻石（操作提示：点击电鳗发动技能）</string>
+    <string name="pet_shark">鲨鱼\n暴走的攻击狂</string>
+    <string name="pet_angel">天使鱼\n起死回生</string>
+    <string name="pet_tadpole">蝌蚪\n模仿达人\n（操作提示：点击钱币数字，选择宠物后变身）</string>
+</resources>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Fish</string>
+
+    <string name="wd_locked">Locked</string>
+    <string name="wd_unlocked">Unlocked</string>
+    <string name="wd_passed">Passed</string>
+    <string name="wd_round">Round</string>
+
+    <string name="mode_adve">Adventure</string>
+    <string name="mode_pet">Pet Mode</string>
+    <string name="mode_chal">Challenge</string>
+    <string name="mode_four">Coming Soon</string>
+
+    <string name="setting_title">Setting</string>
+    <string name="setting_music">Music</string>
+    <string name="setting_sound">Sound</string>
+    <string name="setting_keep_screen_on">Screen On</string>
+
+    <string name="dialog_pause">Pause</string>
+    <string name="dialog_hint">Hint</string>
+    <string name="dialog_unlock_pet">Unlock New Pet</string>
+
+    <string name="dialog_completed">Mission Completed !</string>
+    <string name="dialog_failed">Failed !</string>
+    <string name="dialog_want_exit">Do you want to exit?</string>
+
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="dialog_restart">Restart</string>
+
+    <string name="help_title">Help</string>
+    <string name="help_how_to_play">How To Play</string>
+    <string name="help_mode">Game Mode</string>
+    <string name="help_about">About</string>
+    <string name="help_0">Fish need feeding on time, or they will die because hunger.</string>
+    <string name="help_1">Fish will produce coins after grow up, click to collect coins.</string>
+    <string name="help_2">You can buy props when item open.</string>
+    <string name="help_3">Monster will hurt fish, clicking to kill it.</string>
+    <string name="help_4">Pets can help us.</string>
+    <string name="help_5">You will pass the round after buy the egg three times.</string>
+    <string name="help_mode_words">Adventure\nBuy egg three times to pass. Each round will awards a pet.\n\nPet Mode\nIn start you have no pets, egg window replaced by random pet. Round 1 to 4 need 5,10,15,20 pets to pass.\n\nChallenge\nProps prices will keep increase.</string>
+    <string name="help_about_words">Welcome your ideas, suggestions, and bug feedback.\n\nEmail:\nactionshark@qq.com\n\nBlog:\nhttp://hi.baidu.com/actionshark</string>
+
+    <string name="pet_title">Pets</string>
+    <string name="pet_show">Touch the pets for details</string>
+    <string name="pet_round">Select three pets to start</string>
+    <string name="pet_clone">Select a pet to clone</string>
+
+    <string name="pet_snail">Snail\nCoin collector in the bottom</string>
+    <string name="pet_clam">Clam\nProduction of pearl</string>
+    <string name="pet_sword">Sword\nAttack the invading enemy</string>
+    <string name="pet_breeder">Breeder\nProduction of small Guppy</string>
+    <string name="pet_horse">Horse\nAlimenter</string>
+
+    <string name="pet_jelly">Jelly\nCoin collector</string>
+    <string name="pet_bone">Bone\nThe coin casting Division</string>
+    <string name="pet_crab">Crab\nHit the enemy</string>
+    <string name="pet_mermaid">Mermaid\nChina good voice</string>
+    <string name="pet_whale">Whale\nProtector</string>
+
+    <string name="pet_turtle">Turtle\nSlower</string>
+    <string name="pet_toy">Toy\nPut mine</string>
+    <string name="pet_lamp">Lamp\nGuide</string>
+    <string name="pet_dolphin">Dolphin\nProphet</string>
+    <string name="pet_hermit">Hermit\nUnderwater worker</string>
+
+    <string name="pet_fan">Fan\nPorter</string>
+    <string name="pet_eel">Eel\nKill the fish to get the diamond(Operation tips: Click the Eel)</string>
+    <string name="pet_shark">Shark\nAssailant</string>
+    <string name="pet_angel">Angel\nGive you another life</string>
+    <string name="pet_tadpole">Tadpole\nImitator\n(Operation tips:Click the Money Text and select pet to clone it)</string>
+</resources>
